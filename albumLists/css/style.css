@@ -172,9 +172,9 @@ body {
 .m-icon {
 	background: url(../img/arr_dot.png) no-repeat;
 	position: relative;
-	left: 4.5em;
 	width: 18px;
 	height: 18px;
+	margin: 0 0 0 auto;
 }
 .content:not(:last-child) {
 	margin-bottom: 0;
@@ -187,13 +187,55 @@ body {
 .pagination-link,.pagination-next,.pagination-previous {
 	border-radius: 0;
 }
-.m-previous {
-	position: relative;
-	left: 30em;
+@media screen and (max-width: 768px) {
+	.m-previous {
+		position: relative;
+		left: 18em;
+	}
+	.m-next {
+		position: relative;
+		right: 18em;
+	}
 }
-.m-next {
-	position: relative;
-	right: 30em;
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.m-previous {
+		position: relative;
+		left: 18em;
+	}
+	.m-next {
+		position: relative;
+		right: 18em;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+	.m-previous {
+		position: relative;
+		left: 18em;
+	}
+	.m-next {
+		position: relative;
+		right: 18em;
+	}
+}
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+	.m-previous {
+		position: relative;
+		left: 30em;
+	}
+	.m-next {
+		position: relative;
+		right: 30em;
+	}
+}
+@media screen and (min-width: 1408px) {
+	.m-previous {
+		position: relative;
+		left: 30em;
+	}
+	.m-next {
+		position: relative;
+		right: 30em;
+	}
 }
 .pagination a {
 	color: #333;
