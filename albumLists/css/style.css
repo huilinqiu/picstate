@@ -1,0 +1,207 @@
+body {
+	color: white;
+}
+.m-header {
+	width: 100%;
+	float: left;
+	clear: both;
+	height: 70px;
+	line-height: 70px;
+	background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+	font-size: 12px;
+	z-index: 5;
+}
+.m-header-main {
+}
+.level a {
+	font-size: 18px;
+	color: white;
+}
+.level .level-right .button {
+	background: #FFC237;
+	color: black;
+}
+.level .level-right .button:hover {
+	background: white;
+}
+.level .level-right .m-login:hover,
+.level .level-right .m-register:hover {
+	color: #FFC237;
+}
+
+.footer {
+	background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+	padding: 0;
+}
+.m-content {
+	position: absolute;
+	width: 100%;
+	top: 4em;
+}
+.footer .level-item p {
+	margin-bottom: 0;
+}
+.footer .level-item p:first-child {
+	margin-top: 1.5em;
+}
+.footer .level-item p:last-child {
+	margin-bottom: 1.5em;
+}
+.level img {
+	margin-left: 2em;
+}
+.m-align-left {
+	position: relative;
+	left: -7em;
+}
+.m-align-left2 {
+	position: relative;
+	left: -2em;
+}
+.m-align-up {
+	position: relative;
+	top: -1.5em;
+}
+.m-left-right-border {
+	border-left: 1px solid gray;
+	border-right: 1px solid gray;
+}
+.m-content .level a {
+	color: black;
+}
+.m-title {
+	background: white;
+	border: 1px solid transparent;
+	padding: 1.5em;
+}
+.m-content-bg {
+	width: 100%;
+	background: #F6F6F6;
+	padding-top: 3.5em;
+}
+.m-sousuo-input {
+	border: 1px solid #ccc;
+	border-radius: 2em;
+	height: 2.5em;
+	padding-left: 1.5em;
+	outline: 0;
+}
+.m-sousuo {
+	background: url(../img/sousuo.png) no-repeat;
+	background-position: 90%;
+	width: 1.5em;
+	height: 1.5em;
+	display: inline-block;
+	position: relative;
+	left: -2em;
+	top: 0.5em;
+}
+::-webkit-input-placeholder {
+	color: #bbb;
+}
+.level-left .level-item p.subtitle {
+	padding: 5px;
+}
+.level-item:first-child p {
+	background: #FFC237;
+}
+@media screen and (max-width: 768px) {
+	.level-left .level-item p.subtitle {
+		margin-right: 0;
+	}
+	.m-sousuo-input {
+		width: 19em;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.level-left .level-item p.subtitle {
+		margin-right: 0;
+	}
+	.m-sousuo-input {
+		width: 19em;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+	.level-left .level-item p.subtitle {
+		margin-right: 0;
+	}
+	.m-sousuo-input {
+		width: 17em;
+	}
+}
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+	.level-left .level-item p.subtitle {
+		margin-right: 0;
+	}
+	.m-sousuo-input {
+		width: 19em;
+	}
+}
+@media screen and (min-width: 1408px) {
+	.level-left .level-item p.subtitle {
+		margin-right: 2.3em;
+	}
+	.m-sousuo-input {
+		width: 19em;
+	}
+}
+.card {
+	padding: 1em;
+}
+.card-content {
+	padding: 0;
+}
+.m-content-height {
+	height: 2.5em;
+}
+.m-text-style {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+@media screen and (min-width: 325px) and (max-width: 1215px) {
+	.m-text-style {
+		width: 250px;
+	}
+}
+.media-right {
+	margin-top: 0.5em;
+	position: absolute;
+	right: 1em;
+}
+.m-icon {
+	background: url(../img/arr_dot.png) no-repeat;
+	position: relative;
+	left: 4.5em;
+	width: 18px;
+	height: 18px;
+}
+.content:not(:last-child) {
+	margin-bottom: 0;
+}
+.pagination {
+	margin: 0;
+	margin-top: 4em;
+	margin-bottom: 5em;
+}
+.pagination-link,.pagination-next,.pagination-previous {
+	border-radius: 0;
+}
+.m-previous {
+	position: relative;
+	left: 30em;
+}
+.m-next {
+	position: relative;
+	right: 30em;
+}
+.pagination a {
+	color: #333;
+}
+.pagination a.is-current {
+	color: white;
+	background: gray;
+}
+a.m-is-disabled {
+	color: #ccc;
+}
