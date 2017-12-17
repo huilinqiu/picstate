@@ -102,7 +102,7 @@ body {
 .level-left .level-item p.subtitle {
 	padding: 5px;
 }
-.level-item:first-child p {
+.level-item:first-child p.subtitle {
 	background: #FFC237;
 }
 @media screen and (max-width: 768px) {
