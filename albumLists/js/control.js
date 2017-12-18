@@ -48,4 +48,17 @@
 			});
 		}
 	}
+	
+	// 分页显示鼠标移入移出处理
+	var pages = document.querySelectorAll('.pagination .pagination-link');
+	if(pages){
+		for(var i=0;i<pages.length;i++){
+			pages[i].addEventListener('mouseenter',function(){
+				this.classList.add('is-current');
+			});
+			pages[i].addEventListener('mouseleave',function(){
+				this.classList.remove('is-current');
+			});
+		}
+	}
 })()

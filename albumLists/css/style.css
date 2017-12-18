@@ -280,7 +280,7 @@ body {
 }
 .pagination a.is-current {
 	color: white;
-	background: gray;
+	background: #666;
 }
 a.m-is-disabled {
 	color: #ccc;
