@@ -28,7 +28,45 @@ body {
 .level .level-right .m-register:hover {
 	color: #FFC237;
 }
-
+.m-header-menu:hover {
+	background: #FFC237;
+}
+.m-menu-control:before {
+	background: url(../img/hover-bg.png) 0 0 no-repeat;
+	height: 70px;
+	width: 23px;
+	position: absolute;
+	content: '';
+	top: 0;
+	margin-left: -23px;
+}
+.m-menu-control:after {
+	background: url(../img/hover-bg.png) -23px 0 no-repeat;
+	background-origin: padding-box;
+	height: 70px;
+	width: 23px;
+	position: absolute;
+	content: '';
+	top: 0;
+}
+.m-menu-left {
+	position: absolute;
+	background: url(../img/hover-bg.png) 0 0 no-repeat;
+	height: 70px;
+	width: 23px;
+	left: -59px;
+	top: 0;
+	
+}
+.m-menu-right {
+	position: absolute;
+	background: url(../img/hover-bg.png) -23px 0 no-repeat;
+	height: 70px;
+	width: 23px;
+	right: 23px;
+	top: 0;
+	
+}
 .footer {
 	background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
 	padding: 0;
@@ -246,4 +284,71 @@ body {
 }
 a.m-is-disabled {
 	color: #ccc;
+}
+.m-card-hover:hover {
+	-webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.8), 0 0 0 1px rgba(10, 10, 10, 0.8);
+          box-shadow: 0 2px 3px rgba(10, 10, 10, 0.8), 0 0 0 1px rgba(10, 10, 10, 0.8);
+} 
+.modal-background {
+	background-color: rgba(251,248,221,0.95);
+	z-index: 20;
+}
+.modal-background p {
+	position: relative;
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+	.modal-background figure {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 1em;	
+	}
+	.is-160x160 {
+		width: 8em;
+		height: 8em;
+	}
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+	.modal-background figure {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 1em;	
+	}
+	.is-160x160 {
+		width: 8em;
+		height: 8em;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1215px) {
+	.modal-background figure {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 1em;	
+	}
+	.is-160x160 {
+		width: 8em;
+		height: 8em;
+	}
+}
+@media screen and (min-width: 1216px) and (max-width: 1407px) {
+	.modal-background figure {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 2em;	
+	}
+	.is-160x160 {
+		width: 10em;
+		height: 10em;
+	}
+}
+@media screen and (min-width: 1408px) {
+	.modal-background figure {
+		position: relative;
+		margin: 0 auto;
+		margin-top: 2em;	
+	}
+	.is-160x160 {
+		width: 10em;
+		height: 10em;
+	}
 }
