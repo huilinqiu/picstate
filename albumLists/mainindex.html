@@ -40,7 +40,7 @@
 					    <!--<span class="m-menu-right"></span>-->
 					</p>
 					<p class="level-item level-right has-text-centered">
-					    <a class="link is-info button">我要预约</a>
+					    <a class="link is-info button m-reservation">我要预约</a>
 					</p>
 					<p class="level-item level-right has-text-centered">
 					    <a class="link is-info m-login">登录</a>
@@ -95,7 +95,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -125,7 +125,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -155,7 +155,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -187,7 +187,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -217,7 +217,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -247,7 +247,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -279,7 +279,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -309,7 +309,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -339,7 +339,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -371,7 +371,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -401,7 +401,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -431,7 +431,7 @@
 				    <div class="column">
 				    	<div class="card m-card-hover">
 						    <div class="card-image">
-						    	<div class="modal-background is-hidden">
+						    	<div class="m-modal-background is-hidden">
 						    		<figure class="image is-160x160">
 						    			<img src="img/download.png"/>
 						    		</figure>
@@ -502,6 +502,109 @@
 			</div>
 	    </div>
     </div>
+    <div class="modal" style="color: #666;">
+		<div class="modal-background"></div>
+		<div class="modal-card m-card">
+		    <header class="modal-card-head m-card-head">
+		        <button class="delete m-delete-right"></button>
+		    </header>
+		    <section class="modal-card-body">
+		        <div class="content">
+		      		<p class="modal-card-title has-text-centered">一步完成预约</p>
+		      		<p class="has-text-centered">填写预约信息，我们会以最快的速度联系您！</p>
+		      		<div class="field is-horizontal">
+					  <div class="field-label is-medium m-field-label">
+					    <label class="is-size-6"><span class="has-text-danger">*</span>&nbsp;&nbsp;姓名</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					        <input class="input is-medium m-input" type="text" placeholder="请输入姓名">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-medium m-field-label">
+					    <label class="is-size-6"><span class="has-text-danger">*</span>&nbsp;&nbsp;城市</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					        <input class="input is-medium m-input" type="text" placeholder="请选择城市">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-medium m-field-label">
+					    <label class="is-size-6"><span class="has-text-danger">*</span>&nbsp;&nbsp;日期</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					        <input class="input is-medium m-input" type="text" placeholder="请选择预约日期">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-medium m-field-label">
+					    <label class="is-size-6"><span class="has-text-danger">*</span>&nbsp;&nbsp;类型</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					        <input class="input is-medium m-input" type="text" placeholder="请选择类型">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-medium m-field-label">
+					    <label class="is-size-6">其他需求</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					       	 <input class="input is-medium m-input m-input-multi" type="text" placeholder="请选择类型">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-medium m-field-label">
+					    <label class="is-size-6"><span class="has-text-danger">*</span>手机号码</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					        <input class="input is-medium m-input" type="text" placeholder="请输入手机号码">
+					      </div>
+					    </div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-medium m-field-label">
+					    <label class="is-size-6"><span class="has-text-danger">*</span>&nbsp;验证码</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					        <input class="input is-medium m-input m-validate" type="text" placeholder="请输入验证码">
+					        <a class="button is-black m-button-black">获取验证码</a>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+		        </div>
+		    </section>
+		    <footer class="modal-card-foot m-card-foot">
+		        <a class="button m-card-button is-large">提交预约</a>
+		    </footer>
+	    </div>
+	</div>
+
 	<script src="js/control.js"></script>
 </body>
 </html>

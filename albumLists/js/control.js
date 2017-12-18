@@ -35,13 +35,13 @@
 	if(codecolumns){
 		for(var i=0;i<codecolumns.length;i++){
 			codecolumns[i].addEventListener('mouseenter',function(){
-				var codeimage = this.querySelector('.modal-background.is-hidden');
+				var codeimage = this.querySelector('.m-modal-background.is-hidden');
 				if(codeimage.classList.contains('is-hidden')) {
 					codeimage.classList.remove('is-hidden');
 				}
 			});
 			codecolumns[i].addEventListener('mouseleave',function(){
-				var codeimage = this.querySelector('.modal-background');
+				var codeimage = this.querySelector('.m-modal-background');
 				if(!codeimage.classList.contains('is-hidden')) {
 					codeimage.classList.add('is-hidden');
 				}
@@ -58,6 +58,23 @@
 			});
 			pages[i].addEventListener('mouseleave',function(){
 				this.classList.remove('is-current');
+			});
+		}
+	}
+	
+	//预约点击菜单
+	var reservation = document.querySelector('.m-reservation');
+	if(reservation) {
+		var modal = document.querySelector('.modal');
+		if(!modal.classList.contains('is-active') && modal) {
+			reservation.addEventListener('click',function(){
+				modal.classList.add('is-active');
+			});
+		}
+		var deletebutton = modal.querySelector('.modal-card-head .delete');
+		if(deletebutton){
+			deletebutton.addEventListener('click',function(){
+				modal.classList.remove('is-active');
 			});
 		}
 	}

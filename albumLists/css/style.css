@@ -49,24 +49,6 @@ body {
 	content: '';
 	top: 0;
 }
-.m-menu-left {
-	position: absolute;
-	background: url(../img/hover-bg.png) 0 0 no-repeat;
-	height: 70px;
-	width: 23px;
-	left: -59px;
-	top: 0;
-	
-}
-.m-menu-right {
-	position: absolute;
-	background: url(../img/hover-bg.png) -23px 0 no-repeat;
-	height: 70px;
-	width: 23px;
-	right: 23px;
-	top: 0;
-	
-}
 .footer {
 	background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
 	padding: 0;
@@ -135,7 +117,8 @@ body {
 	top: 0.5em;
 }
 ::-webkit-input-placeholder {
-	color: #bbb;
+	color: #aaa;
+	font-size: 15px;
 }
 .level-left .level-item p.subtitle {
 	padding: 5px;
@@ -289,16 +272,21 @@ a.m-is-disabled {
 	-webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.8), 0 0 0 1px rgba(10, 10, 10, 0.8);
           box-shadow: 0 2px 3px rgba(10, 10, 10, 0.8), 0 0 0 1px rgba(10, 10, 10, 0.8);
 } 
-.modal-background {
+.m-modal-background {
 	background-color: rgba(251,248,221,0.95);
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
 	z-index: 20;
 }
-.modal-background p {
+.m-modal-background p {
 	position: relative;
 	text-align: center;
 }
 @media screen and (max-width: 768px) {
-	.modal-background figure {
+	.m-modal-background figure {
 		position: relative;
 		margin: 0 auto;
 		margin-top: 1em;	
@@ -309,7 +297,7 @@ a.m-is-disabled {
 	}
 }
 @media screen and (min-width: 769px) and (max-width: 1023px) {
-	.modal-background figure {
+	.m-modal-background figure {
 		position: relative;
 		margin: 0 auto;
 		margin-top: 1em;	
@@ -320,7 +308,7 @@ a.m-is-disabled {
 	}
 }
 @media screen and (min-width: 1024px) and (max-width: 1215px) {
-	.modal-background figure {
+	.m-modal-background figure {
 		position: relative;
 		margin: 0 auto;
 		margin-top: 1em;	
@@ -331,7 +319,7 @@ a.m-is-disabled {
 	}
 }
 @media screen and (min-width: 1216px) and (max-width: 1407px) {
-	.modal-background figure {
+	.m-modal-background figure {
 		position: relative;
 		margin: 0 auto;
 		margin-top: 2em;	
@@ -342,7 +330,7 @@ a.m-is-disabled {
 	}
 }
 @media screen and (min-width: 1408px) {
-	.modal-background figure {
+	.m-modal-background figure {
 		position: relative;
 		margin: 0 auto;
 		margin-top: 2em;	
@@ -351,4 +339,49 @@ a.m-is-disabled {
 		width: 10em;
 		height: 10em;
 	}
+}
+.m-card {
+	max-width: 580px;
+}
+.m-card-head {
+	border-bottom: 0;
+	background-color: white;
+}
+.m-delete-right {
+	margin: 0 0 0 auto;
+}
+.m-card-foot {
+	border-top: 0;
+	background-color: white;
+}
+.m-card-button {
+	background-color: #FFC237;
+	border: 0;
+	border-radius: 0;
+	margin: 0 auto;
+	width: 12em;
+}
+.m-input,.m-textarea {
+	border-radius: 0;
+	width: 90%;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-color: #666;
+	background: #FEFBF4;
+}
+.m-input:focus,.m-textarea:focus {
+	border-color: #666;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.m-input-multi {
+	height: 8em;
+}
+.m-validate {
+	width: 50%;
+}
+.m-button-black {
+	border-radius: 0;
+	height: 2.8em;
+	width: 39%;
 }
