@@ -361,7 +361,7 @@ a.m-is-disabled {
 	margin: 0 auto;
 	width: 12em;
 }
-.m-input,.m-textarea {
+.m-input,.m-textarea,.m-select {
 	border-radius: 0;
 	width: 90%;
 	box-shadow: none;
@@ -369,13 +369,14 @@ a.m-is-disabled {
 	border-color: #666;
 	background: #FEFBF4;
 }
-.m-input:focus,.m-textarea:focus {
+.m-input:focus,.m-textarea:focus,.m-select:focus {
 	border-color: #666;
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }
-.m-input-multi {
-	height: 8em;
+.m-textarea {
+	max-width: 90%;
+	min-width: 90%;	
 }
 .m-validate {
 	width: 50%;
@@ -384,4 +385,36 @@ a.m-is-disabled {
 	border-radius: 0;
 	height: 2.8em;
 	width: 39%;
+}
+.m-title-bg {
+	background: url(../img/yuyue.png) no-repeat;
+	background-position: 50%;
+}
+.m-input-type {
+	background: url(../img/arr_down_g.png) #FEFBF4 no-repeat;
+	background-position: 95%;
+}
+.m-dropdown-menu {
+	padding-top: 0;
+	margin-top: -1px;
+	border: 1px solid #666;
+	width: 90%;
+}
+.m-dropdown-menu a {
+	display: inline-block;
+	padding-right: 1em;
+}
+.m-dropdown-content {
+	background-color: #FEFBF4;
+}
+.m-select {
+	width: auto;
+	margin-bottom: 8px
+}
+.m-select select {
+	height: 2.5em;
+	border-radius: 0;
+	border: 1px solid #666;
+	background-color: #FEFBF4;
+	
 }

@@ -78,4 +78,19 @@
 			});
 		}
 	}
+	
+	// 预约菜单类型选择下拉菜单
+	var inputtype = document.querySelector('.m-input-type');
+	if(inputtype){
+		var dropmenu = document.querySelector('.dropdown-menu');
+		inputtype.addEventListener('click',function(){
+			var displayvalue = getComputedStyle(dropmenu,null).getPropertyValue('display');
+			if(displayvalue === 'none'){
+				dropmenu.style.display = 'block';
+			}
+			if(displayvalue === 'block'){
+				dropmenu.style.display = 'none';
+			}
+		});
+	}
 })()
