@@ -418,3 +418,46 @@ a.m-is-disabled {
 	background-color: #FEFBF4;
 	
 }
+.m-fixed-reserve,.m-fixed-tel,.m-fixed-toTop {
+	position: fixed;
+	right: 1.5em;
+	width: 5em;
+	height: 5em;
+}
+.m-fixed-reserve {
+	background: url(../img/reserve.png) #585858 no-repeat;
+	background-position-x: 50%;
+	background-position-y: 20%;
+	bottom: 15em;
+}
+.m-fixed-tel {
+	background: url(../img/tel.png) #585858 no-repeat;
+	background-position-x: 50%;
+	background-position-y: 20%;
+	bottom: 9.5em;
+}
+.m-fixed-toTop {
+	background: url(../img/backtop.png) #585858 no-repeat;
+	background-position-x: 50%;
+	background-position-y: 20%;
+	bottom: 4em;
+}
+.m-fixed-text1,.m-fixed-text2,.m-fixed-text3 {
+	position: fixed;
+	right: 1.5em;
+	font-size: 0.8em;
+	text-align: center;
+	width: 7.5em;	
+}
+.m-fixed-text1 {
+	bottom: 20em;
+}
+.m-fixed-text2 {
+	bottom: 13.5em;
+}
+.m-fixed-text3 {
+	bottom: 7em;
+}
+.m-fixed-button div {
+	cursor: pointer;
+}

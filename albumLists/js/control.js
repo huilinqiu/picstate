@@ -93,4 +93,26 @@
 			}
 		});
 	}
+	
+	// 回到顶部按键，在scrollTop>0时候，显示，按下则回到top
+	var last_known_scroll_position = 0;
+	var toTop = document.querySelector('.m-button-toTop');
+	function scrollDisplay(scroll_pos) {
+		if(scroll_pos > 0) {
+			toTop.classList.remove('is-hidden');
+		}else{
+			toTop.classList.add('is-hidden');
+		}
+	}
+	
+	window.addEventListener('scroll', function(e){
+	    last_known_scroll_position = window.scrollY;
+	    window.requestAnimationFrame(function(){
+	    	scrollDisplay(last_known_scroll_position);
+	    });
+	   
+	});
+	toTop.addEventListener('click',function(){
+		document.body.scrollTop = document.documentElement.scrollTop = 0; 
+	});
 })()
