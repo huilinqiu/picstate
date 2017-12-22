@@ -98,7 +98,7 @@
 	var last_known_scroll_position = 0;
 	var toTop = document.querySelector('.m-button-toTop');
 	function scrollDisplay(scroll_pos) {
-		if(scroll_pos > 0) {
+		if(scroll_pos > 100) {
 			toTop.classList.remove('is-hidden');
 		}else{
 			toTop.classList.add('is-hidden');
@@ -115,4 +115,16 @@
 	toTop.addEventListener('click',function(){
 		document.body.scrollTop = document.documentElement.scrollTop = 0; 
 	});
+	
+	//input 搜索去掉placeholder
+	var sousuo = document.querySelector('.m-sousuo-input');
+	if(sousuo){
+		var placeholder = sousuo.getAttribute('placeholder');
+		sousuo.addEventListener('focus',function(){
+			this.setAttribute('placeholder','');
+		});
+		sousuo.addEventListener('blur',function(){
+			this.setAttribute('placeholder',placeholder);
+		});
+	}
 })()
