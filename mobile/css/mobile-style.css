@@ -2,16 +2,22 @@
 	background: black;
 	padding: 8px 0;
 }
+.m-menu-left {
+	background: url(../img/arr_return.png) no-repeat center center;
+	width: 2rem;
+	height: 2rem;
+	background-size: 1.5rem auto;
+}
 .m-menu-right {
-	background: url(../img/shousuo.png) no-repeat;
-	background-position: 90%;
+	background: url(../img/shousuo.png) no-repeat center center;
 	display: block;
 	width: 2rem;
 	height: 2rem;
 	background-size: 2rem auto;
+	margin-right: 0.5rem;
 }
 #dropdown-menu {
-	right: 0;
+	right: 3px;
 	top: 5%;
 	left: auto;
 	min-width: 5rem;
@@ -19,11 +25,15 @@
 .m-dropdown-content {
 	background-color: black;
 }
-.dropdown-item {
-	color: white;
+.m-dpdown-item {
+	color: rgba(256,256,256,0.7);
+	font-size: 1em;
 }
-.dropdown-item:not(:last-child) {
-	border-bottom: 1px solid gray;
+a.m-dpdown-item {
+	padding-right: 1rem;
+}
+.m-dpdown-item:not(:last-child) {
+	border-bottom: 1px solid #333;
 }
 .level-item img {
 	width: 110px;
@@ -245,62 +255,323 @@
 .m-seventh-img {
 	margin: 2em 0;
 }
-
-@media screen and (max-width: 768px) {
+.m-seventh-login {
+	position: relative;
+	background: url(../img/index05.jpg) no-repeat;
+	background-size: 100%;
+	height: 375px;
+}
+@media screen and (max-width: 425px) {
+	.m-seventh-login {
+		height: 215px;
+	}
 	.m-seventh-list {
 		position: absolute;
 		top: 60px;
 		left: 40%;
 	}
 }
-@media screen and (min-width: 769px) and (max-width: 1023px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
 	.m-seventh-list {
 		position: absolute;
-		top: 120px;
+		top: 140px;
 		left: 45%;
 	}
 }
-@media screen and (min-width: 1024px) and (max-width: 1215px) {
-	.m-seventh-list {
-		position: absolute;
-		top: 140px;
-		left: 46%;
-	}
-}
-@media screen and (min-width: 1216px) and (max-width: 1407px) {
-	.m-seventh-list {
-		position: absolute;
-		top: 140px;
-		left: 48%;
-	}
-}
-@media screen and (min-width: 1408px) {
-	.m-seventh-list {
-		position: absolute;
-		top: 140px;
-		left: 48%;
-	}
-}
-.m-seventh-login {
-	position: relative;
-}
+
 .m-button-reserv {
 	background-color: #FFC237;
-	color: white;
+	color: black;
+	border: 0;
 }
 .m-button-or {
 	color: #FFC237;
 }
 .m-button-login {
 	background-color: #FFC237;
-	color: white;
+	color: black;
+	border: 0;
 }
-
-
 .m-footer {
 	position: relative;
 	width: 100%;
 	background: black;
 	text-align: center;
 }
+.m-footer img {
+	margin: 20px 0 10px;
+}
+.m-footer p {
+	color: rgba(256,256,256,0.7);
+}
+/*liveAlbums页面*/
+.sousuo-items-list {
+	position: relative;
+	width: 100%;
+	margin: 0 10px;
+}
+.m-level-item {
+	display: inline-flex;
+	border: 1px solid #FFC237;
+	padding: 5px 15px;
+}
+.m-itemactive-bg {
+	background-color: #FFC237;
+} 
+.m-level {
+	margin: 10px 0;
+}
+.m-sousuo-input {
+	border: 1px solid #666;
+	border-radius: 3rem;
+	outline: 0;
+	padding-left: 15px;
+	width: 95%;
+	height:3rem;
+	margin-left: 5px;
+	margin-top: 10px;
+}
+.m-sousuo-input::-webkit-input-placeholder {
+	color: #aaa;
+	font-size: 15px;
+}
+.m-sousuo {
+	background: url(../img/sousuo.png) no-repeat center center;
+	background-size: 70%;
+	width: 2.5em;
+	height: 2.5em;
+	display: inline-block;
+	position: relative;
+	left: -3em;
+	top: 0.3em;
+}
+.content-container {
+	position: relative;
+	margin: 10px 15px;
+}
+.m-content-img img {
+	display: block;
+	width: 100%;
+}
+.m-content-title {
+	overflow: hidden;
+	height: 48px;
+	line-height: 24px;
+}
 
+/*固定按钮*/
+.static-icon {
+	position: fixed;
+	right: 10px;
+	bottom: 20px;
+	width: 60px;
+	height: 260px;
+	z-index: 99;
+}
+.static-icon .m-icon-static a {
+	display: block;
+	height: inherit;
+}
+.m-icon-static {
+	width: 60px;
+	height: 60px;
+	border: 1px solid #FFC237;
+	background: #FFC237;
+	border-radius: 50%;
+	position: relative;
+}
+.m-icon-reserv {
+	background: url(../img/reserve.png) no-repeat;
+	background-size: 80%;
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	left: 0.7rem;
+}
+.m-icon-register {
+	background: url(../img/usereg.png) no-repeat;
+	background-size: 80%;
+	width: 40px;
+	height: 40px;
+	display: block;
+	position: absolute;
+	left: 0.8rem;	
+}
+.m-icon-backTop {
+	background: url(../img/gotop3.png) no-repeat;
+	background-size: 60%;
+	width: 40px;
+	height: 40px;
+	display: block;	
+	position: absolute;
+	left: 1.1rem;
+	top: 1.2rem;	
+}
+.m-icon-static p {
+	font-size: 12px;
+	top: 35px;
+	position: absolute;
+ 	left: 0.3rem;	
+}
+.m-static-columns {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	height: inherit;
+}
+.m-column-up {
+	padding: 0.25rem 0.75rem;
+}
+.m-column-down {
+	padding: 0.25rem 0.75rem;
+	position: relative;
+	top: 56px;
+}
+.m-data-complete {
+	text-align: center;
+	text-shadow: 1px 1px 1px #ccc;
+}
+
+/*注册页面css*/
+.register-content {
+	position: relative;
+	width: 100%;
+}
+.register-head-img {
+	width: 100%;
+}
+.register-items {
+	position: relative;	
+	margin: 10px;
+}
+.register-items span {
+	color: red;
+	margin-right: 10px;
+}
+.register-label {
+	font-weight: 400;
+}
+.register-control input {
+	border: 1px solid #ccc;
+	outline: 0;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	width: 90%;
+	height: 50px;
+	border-radius: 0;
+}
+.register-control input::-webkit-input-placeholder {
+	color: #666;
+}
+.sexbutton {
+	width: 50px;
+	height: 50px;
+	border-color: #888;
+	border-radius: 0;
+	outline: 0;
+}
+.sexbutton:first-child {
+	background-color: #FFC237;
+}
+.regbutton {
+	width: 100px;
+	height: 50px;
+	border-color: #FFC237;
+	border-radius: 0;
+	outline: 0;
+}
+.regbutton:last-child {
+	background-color: #FFC237;
+}
+.validator input {
+	width: 60%;
+}
+.validbutton {
+	width: 30%;
+	height: 50px;
+	border-color: #FFC237;
+	border-radius: 0;
+	outline: 0;	
+	display: inline-block;
+	background-color: #FFC237;
+}
+span.is-common{
+	color: #FFC237;
+}
+.is-common{
+	color: #FFC237;
+}
+.is-common-bg {
+	background-color: #FFC237;
+}
+.loginbutton {
+	width: 90%;
+	height: 50px;
+	border-color: #FFC237;
+	border-radius: 0;
+	outline: 0;	
+}
+
+/*我要预约页面*/
+.reserve-container {
+	position: relative;
+	width: 100%;
+	margin: 20px;
+}
+.m-title-bg {
+	background: url(../img/yuyue.png) no-repeat;
+	background-position: 50%;
+}
+.m-input,.m-textarea,.m-select {
+	border-radius: 0;
+	width: 90%;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	border-color: #666;
+	background: #FEFBF4;
+}
+.m-input:focus,.m-textarea:focus,.m-select:focus {
+	border-color: #666;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+.m-input-type {
+	background: url(../img/arr_down_g.png) #FEFBF4 no-repeat;
+	background-position: 95%;
+}
+.m-textarea {
+	max-width: 90%;
+	min-width: 90%;	
+}
+.m-validate {
+	width: 50%;
+}
+.m-button-black {
+	border-radius: 0;
+	height: 2.8em;
+	width: 39%;
+}
+.m-select {
+	width: auto;
+	margin-bottom: 8px
+}
+.m-select select {
+	height: 2.5em;
+	border-radius: 0;
+	border: 1px solid #666;
+	background-color: #FEFBF4;
+}
+.m-dropdown-menu {
+	padding-top: 0;
+	margin-top: -1px;
+	border: 1px solid #666;
+	width: 90%;
+}
+.m-dropdown-menu a {
+	display: inline-block;
+	padding-right: 1em;
+}
+.m-type-content {
+	background-color: #FEFBF4;
+}
