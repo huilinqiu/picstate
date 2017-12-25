@@ -353,7 +353,7 @@ a.m-dpdown-item {
 /*固定按钮*/
 .static-icon {
 	position: fixed;
-	right: 60px;
+	right: 0;
 	bottom: 20px;
 	width: 80px;
 	height: 300px;
@@ -406,10 +406,6 @@ a.m-dpdown-item {
  	left: 0.3rem;	
 }
 .m-static-columns {
-	/*display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;*/
 	height: inherit;
 	margin-left: 0;
 	margin-right: 0;
