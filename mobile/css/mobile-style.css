@@ -406,10 +406,10 @@ a.m-dpdown-item {
  	left: 0.3rem;	
 }
 .m-static-columns {
-	display: flex;
+	/*display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
-	align-items: center;
+	align-items: center;*/
 	height: inherit;
 	margin-left: 0;
 	margin-right: 0;
