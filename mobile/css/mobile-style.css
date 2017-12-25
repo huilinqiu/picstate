@@ -298,8 +298,7 @@ a.m-dpdown-item {
 /*liveAlbums页面*/
 .sousuo-items-list {
 	position: relative;
-	width: 100%;
-	margin: 10px 0 10px 15px;
+	margin: 15px;
 	overflow: hidden;
 }
 .m-level-item {
@@ -315,10 +314,8 @@ a.m-dpdown-item {
 	border-radius: 3rem;
 	outline: 0;
 	padding-left: 15px;
-	width: 95%;
+	width: 100%;
 	height:3rem;
-	margin-left: 5px;
-	margin-top: 10px;
 }
 .m-sousuo-input::-webkit-input-placeholder {
 	color: #aaa;
@@ -330,9 +327,16 @@ a.m-dpdown-item {
 	width: 2.5em;
 	height: 2.5em;
 	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 10px;
+	bottom: 0;
+	margin: auto 0 auto auto;
+}
+.sousuo-control {
 	position: relative;
-	left: -3em;
-	top: 0.3em;
+	margin-bottom: 10px;
 }
 .content-container {
 	position: relative;
