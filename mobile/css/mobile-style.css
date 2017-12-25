@@ -257,28 +257,19 @@ a.m-dpdown-item {
 }
 .m-seventh-login {
 	position: relative;
-	background: url(../img/index05.jpg) no-repeat;
-	background-size: 100%;
-	height: 375px;
+	width: 100%;
 }
-@media screen and (max-width: 425px) {
-	.m-seventh-login {
-		height: 215px;
-	}
-	.m-seventh-list {
-		position: absolute;
-		top: 60px;
-		left: 40%;
-	}
-}
-@media screen and (min-width: 426px) and (max-width: 768px) {
-	.m-seventh-list {
-		position: absolute;
-		top: 140px;
-		left: 45%;
-	}
-}
+.m-seventh-list {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 15%;
+	bottom: 0;
 
+}
+.m-seventh-list p.has-text-centered {
+	margin: 10px 0;
+}
 .m-button-reserv {
 	background-color: #FFC237;
 	color: black;
