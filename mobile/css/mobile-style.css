@@ -407,15 +407,15 @@ a.m-dpdown-item {
 }
 .m-static-columns {
 	display: flex;
-	flex-flow: row wrap;
-	align-content: flex-start;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 	height: inherit;
 	margin-left: 0;
 	margin-right: 0;
 }
 .m-column-down {
 	position: relative;
-	top: 56px;
 }
 .m-data-complete {
 	text-align: center;
