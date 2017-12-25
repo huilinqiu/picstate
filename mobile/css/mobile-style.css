@@ -299,7 +299,7 @@ a.m-dpdown-item {
 .sousuo-items-list {
 	position: relative;
 	width: 100%;
-	margin: 0 10px;
+	margin-left: 10px;
 }
 .m-level-item {
 	display: inline-flex;
