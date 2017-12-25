@@ -53,7 +53,6 @@ a.m-dpdown-item {
 .content-second {
 	background: url(../img/index02.png) repeat;
 	position: relative;
-	width: 100%;
 	height:36em;
 	text-align: center;
 }
@@ -95,9 +94,11 @@ a.m-dpdown-item {
 .swiper-container img {
 	width: 100%;
 }
+.swiper-container {
+	line-height: 0;
+}
 .content-third,.content-fourth,.content-fifth {
 	position: relative;
-	width: 100%;
 }
 .content-third .third-bg {
 	display: block;
@@ -222,7 +223,6 @@ a.m-dpdown-item {
 }
 .content-sixth {
 	background: url(../img/index02.png) repeat;
-	/*height: 32rem;*/
 	text-align: left;
 }
 .content-sixth li a {
@@ -239,7 +239,6 @@ a.m-dpdown-item {
 }
 .content-seventh {
 	position: relative;
-	width: 100%;
 	text-align: center;
 }
 .m-seventh-doted {
