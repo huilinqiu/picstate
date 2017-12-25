@@ -353,7 +353,7 @@ a.m-dpdown-item {
 /*固定按钮*/
 .static-icon {
 	position: fixed;
-	right: 20px;
+	right: 60px;
 	bottom: 20px;
 	width: 80px;
 	height: 300px;
