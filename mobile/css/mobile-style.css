@@ -131,27 +131,22 @@ a.m-dpdown-item {
 	box-shadow: 0 2px 6px rgba(10,10,10,0.1),2px 0 6px rgba(10,10,10,0.1);
 	-webkit-box-shadow: 0 2px 6px rgba(10,10,10,0.1),2px 0 6px rgba(10,10,10,0.1);
 	background: white;
-	margin: 0 10px;
 }
 .m-meida-tag1 {
 	background: url(../img/tag01.png) no-repeat;
 	background-position: top right;
-	margin-right: -5px;
 }
 .m-meida-tag2-1 {
 	background: url(../img/tag02.png) no-repeat;
 	background-position: top right;
-	margin-left: -5px;
 }
 .m-meida-tag2-2 {
 	background: url(../img/tag02.png) no-repeat;
 	background-position: top right;
-	margin-right: -5px;
 }
 .m-meida-tag3 {
 	background: url(../img/tag03.png) no-repeat;
 	background-position: top right;
-	margin-left: -5px;
 }
 .m-media-content {
 	text-align: center;
@@ -202,6 +197,10 @@ a.m-dpdown-item {
 }
 .m-column {
 	padding: 0;
+}
+.fourth-columns {
+	margin-left: 0;
+	margin-right: 0;
 }
 .m-button-style {
 	background: #FFC237;
