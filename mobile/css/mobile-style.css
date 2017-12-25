@@ -299,19 +299,17 @@ a.m-dpdown-item {
 .sousuo-items-list {
 	position: relative;
 	width: 100%;
-	margin-left: 10px;
+	margin: 10px 0 10px 15px;
+	overflow: hidden;
 }
 .m-level-item {
 	display: inline-flex;
 	border: 1px solid #FFC237;
-	padding: 5px 15px;
+	padding: 5px 10px;
 }
 .m-itemactive-bg {
 	background-color: #FFC237;
 } 
-.m-level {
-	margin: 10px 0;
-}
 .m-sousuo-input {
 	border: 1px solid #666;
 	border-radius: 3rem;
