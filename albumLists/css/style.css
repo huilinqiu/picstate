@@ -461,3 +461,17 @@ a.m-is-disabled {
 .m-fixed-button div {
 	cursor: pointer;
 }
+.m-fixed-text0 {
+	position: fixed;
+	right: 1.9em;
+	font-size: 0.8em;
+	text-align: center;
+	width: 6.2em;
+	height: 6.2em;
+	bottom: 25.6em;	
+	background: #585858;
+	display: block;
+}
+.m-fixed-text0 p {
+	line-height: 2.8;
+}
